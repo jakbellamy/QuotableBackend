@@ -3,9 +3,14 @@ var ObjectId = require('mongodb').ObjectID
 const Schema = mongoose.Schema
 
 const WinCardSchema = new Schema({
-    imgUrl: {
-        type: String,
-        required: true
+    image: {
+        imgUrl: {
+            type: String,
+            required: true
+        },
+        imgTitle: {
+            type:String,
+        }
     },
     quote: {
         type: String,

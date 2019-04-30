@@ -10,7 +10,7 @@ const PORT = 5000
 
 //mongoose connection
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/')
+mongoose.connect("mongodb://localhost/")
 
 //bodyparser setup
 app.use(bodyParser.urlencoded({extended: true}))

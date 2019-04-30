@@ -1,6 +1,5 @@
 import {WinCard} from '../models/winCardModel'
-import { winCardValidation } from '../validators/winCardValidation';
-import { User } from '../models/userModel';
+import { winCardValidation } from '../validators/winCardValidation'
 const _ = require('lodash')
 
 export const postWinCard = async (req, res) => {
@@ -25,5 +24,4 @@ export const getWinCards = (req, res) => {
         }
         res.json(winCard)
     })
-    .populate('User')
 }
