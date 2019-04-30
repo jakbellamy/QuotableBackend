@@ -3,7 +3,7 @@ import { auth } from "../middleware/auth";
 
 const userRoutes = (app) => {
     app.route('/users')
-    .get(auth, getUsers)
+    .get(getUsers)
     
     app.route('/register')
     .post(addNewUser);
